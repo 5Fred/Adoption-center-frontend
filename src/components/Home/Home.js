@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <h2>Welcome to the Adoption Center!</h2>
-      <p>Find your perfect pet companion.</p>
+      <p>Kenny</p>
     </div>
   );
 };
