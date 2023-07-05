@@ -1,7 +1,7 @@
-import NavBar from './components/NavBar';
-import Home from './components/Home';
-import Login from './components/Login';
-import SignUp from './components/SignUp';
+import NavBar from './components/NavBar/NavBar';
+import Home from './components/Home/Home';
+import Login from './components/Login/Login';
+import SignUp from './components/SignUp/SignUp';
 
 const App = () => {
   return (
