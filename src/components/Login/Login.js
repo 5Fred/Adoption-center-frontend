@@ -5,10 +5,14 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // Handle login logic here
+    // Add your login logic here
     console.log('Login button clicked');
     console.log('Email:', email);
     console.log('Password:', password);
+
+    // Reset the form fields
+    setEmail('');
+    setPassword('');
   };
 
   return (

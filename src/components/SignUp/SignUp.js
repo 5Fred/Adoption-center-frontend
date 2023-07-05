@@ -6,11 +6,16 @@ const SignUp = () => {
   const [password, setPassword] = useState('');
 
   const handleSignUp = () => {
-    // Handle sign up logic here
+    // Add your sign up logic here
     console.log('Sign up button clicked');
     console.log('Username:', username);
     console.log('Email:', email);
     console.log('Password:', password);
+
+    // Reset the form fields
+    setUsername('');
+    setEmail('');
+    setPassword('');
   };
 
   return (
