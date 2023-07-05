@@ -56,11 +56,6 @@ const NavBar = () => {
           </li>
           <li>
             <a href="/pets" style={styles.link}>
-              <img
-                src="https://i0.wp.com/poochkaboose.org/wp-content/uploads/2021/04/PoochKaboose_Wordpress_Assets_Icon_PetHealth_1_PKversion.png?fit=404%2C404&ssl=1"
-                alt="Pets"
-                style={styles.petsImage}
-              />
               Pets
             </a>
           </li>
