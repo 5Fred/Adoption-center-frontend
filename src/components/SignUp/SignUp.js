@@ -1,20 +1,31 @@
 import React, { useState } from 'react';
 
-const Login = () => {
+const SignUp = () => {
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    // Handle login logic here
-    console.log('Login button clicked');
+  const handleSignUp = () => {
+    // Handle sign up logic here
+    console.log('Sign up button clicked');
+    console.log('Username:', username);
     console.log('Email:', email);
     console.log('Password:', password);
   };
 
   return (
     <div>
-      <h2>Login</h2>
+      <h2>Sign Up</h2>
       <form>
+        <div>
+          <label htmlFor="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </div>
         <div>
           <label htmlFor="email">Email:</label>
           <input
@@ -33,12 +44,12 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="button" onClick={handleLogin}>
-          Login
+        <button type="button" onClick={handleSignUp}>
+          Sign Up
         </button>
       </form>
     </div>
   );
 };
 
-export default Login;
+export default SignUp;
